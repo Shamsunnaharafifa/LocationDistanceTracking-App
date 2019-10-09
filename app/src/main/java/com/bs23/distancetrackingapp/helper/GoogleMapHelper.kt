@@ -87,12 +87,7 @@ class GoogleMapHelper constructor(private val resources: Resources) {
         return df.format(totalDistance / 1000) + " Km"
     }
 
-    //fun getGeoDistance(geoDistance: Double): String{
-     //   if (geoDistance == 2.0 || geoDistance > 2.0){
 
-       // }
-
-   // }
 
     /**
      * This function sets the default google map settings.

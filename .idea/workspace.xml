@@ -10,7 +10,22 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04e7d278-8732-43b9-9b81-1fd45f6fa2d3" name="Default Changelist" comment="" />
+    <list default="true" id="04e7d278-8732-43b9-9b81-1fd45f6fa2d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/SharedPreferencesManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+            <state relative-caret-position="442">
+              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/SharedPreferencesManager.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+            <state relative-caret-position="348">
+              <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -56,12 +71,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/ui/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="93" column="69" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
               <folding>
-                <element signature="e#4750#4793#1" expanded="true" />
-                <element signature="e#4795#4841#1" expanded="true" />
+                <element signature="e#55#2074#0" expanded="true" />
+                <element signature="e#4066#4359#0" />
+                <element signature="e#4403#5107#0" />
+                <element signature="e#6830#6873#1" expanded="true" />
+                <element signature="e#6875#6921#1" expanded="true" />
+                <element signature="e#5227#5721#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/google_api.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="87" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -75,33 +103,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/MarkerAnimationHelper.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>google-maps</find>
+      <find>google_</find>
+      <find>sharedPreferencesManager</find>
     </findStrings>
+    <replaceStrings>
+      <replace>SharedPreferencesManager</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\AFIFA\Desktop\LocationDistanceTrackingApp-master\app</dir>
+      <dir>D:\myAllProjects\LocationDistanceTracking-App\app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -114,14 +136,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/extensionFunction/LiveDataExtensionFunction.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/extensionFunction/LiveDataExtensionFunction.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/SharedPreferencesManager.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/ui/MainActivity.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1378" />
     <option name="height" value="733" />
@@ -233,7 +256,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="733" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -253,41 +275,24 @@
       <window_info anchor="bottom" id="Find" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.415" />
-      <window_info anchor="bottom" id="Logcat" order="9" weight="0.45333335" />
+      <window_info anchor="bottom" id="Logcat" order="9" weight="0.59166664" />
+      <window_info anchor="right" id="Hierarchy" weight="0.32928678" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" sideWeight="0.49918166" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="6" sideWeight="0.5008183" side_tool="true" visible="true" weight="0.1676783" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="6" sideWeight="0.5008183" side_tool="true" visible="true" weight="0.11153263" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="59" column="59" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/google_api.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="78" selection-start-line="3" selection-start-column="78" selection-end-line="3" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-extensions/2.1.0/84e54bd949cf1843ddddfe3e005b4d3a1649d562/lifecycle-extensions-2.1.0-sources.jar!/androidx/lifecycle/ViewModelProviders.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -352,38 +357,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/LatLngInterpolator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" column="55" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/extensionFunction/LiveDataExtensionFunction.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/MarkerAnimationHelper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="102">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="59" column="59" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0329818e2810a435a9d0f0a82215626b/play-services-location-17.0.0/jars/classes.jar!/com/google/android/gms/location/FusedLocationProviderClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/LatLngInterpolator.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -395,13 +393,74 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/extensionFunction/LiveDataExtensionFunction.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/util/SharedPreferencesManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="45" column="59" lean-forward="true" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.maps/google-maps-services/0.2.4/6c01223d56a53ea59ca7c9c91d4cd000c14080b4/google-maps-services-0.2.4-sources.jar!/com/google/maps/GeoApiContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/helper/GoogleMapHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="86" column="54" lean-forward="true" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/viewModel/MainActivityViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.maps/google-maps-services/0.2.4/6c01223d56a53ea59ca7c9c91d4cd000c14080b4/google-maps-services-0.2.4-sources.jar!/com/google/maps/DirectionsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-842">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/google_api.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="87" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bs23/distancetrackingapp/activity/main/ui/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="93" column="69" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
           <folding>
-            <element signature="e#4750#4793#1" expanded="true" />
-            <element signature="e#4795#4841#1" expanded="true" />
+            <element signature="e#55#2074#0" expanded="true" />
+            <element signature="e#4066#4359#0" />
+            <element signature="e#4403#5107#0" />
+            <element signature="e#6830#6873#1" expanded="true" />
+            <element signature="e#6875#6921#1" expanded="true" />
+            <element signature="e#5227#5721#0" />
           </folding>
         </state>
       </provider>

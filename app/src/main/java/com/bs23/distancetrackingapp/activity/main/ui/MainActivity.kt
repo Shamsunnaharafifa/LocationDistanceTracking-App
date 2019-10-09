@@ -1,8 +1,10 @@
 package com.bs23.distancetrackingapp.activity.main.ui
 
 import android.Manifest
+import android.content.Context
 import androidx.lifecycle.ViewModelProviders
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Bundle
@@ -27,7 +29,21 @@ import com.bs23.distancetrackingapp.helper.UiHelper
 import com.bs23.distancetrackingapp.listeners.IPositiveNegativeListener
 import com.bs23.distancetrackingapp.util.AppRxSchedulers
 import com.bs23.distancetrackingapp.util.LatLngInterpolator
+import com.bs23.distancetrackingapp.util.SharedPreferencesManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.math.abs
+import com.google.maps.DirectionsApi
+import org.joda.time.DateTime
+import com.google.maps.model.TravelMode
+import com.google.maps.model.DirectionsResult
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.google.maps.GeoApiContext
+import com.google.maps.errors.ApiException
+import java.io.IOException
+import java.util.concurrent.TimeUnit
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,13 +58,14 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var googleMap: GoogleMap
     private lateinit var viewModel: MainActivityViewModel
-
+    
     private var firstTimeFlag = true
     private var marker: Marker? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val locationProviderClient = LocationServices.getFusedLocationProviderClient(this)
         googleMapHelper = GoogleMapHelper(resources)
         val viewModelFactory = MainActivityViewModelFactory(googleMapHelper, appRxSchedulers, locationProviderClient, uiHelper.getLocationRequest())
@@ -65,10 +82,73 @@ class MainActivity : AppCompatActivity() {
         }
         currentLocationImageButton.setOnClickListener {
             googleMapHelper.animateCamera(marker?.position, googleMap)
+
+            viewModel.currentLocation()
+                    .nonNull()
+                    .observe(this) {
+                        if (SharedPreferencesManager.getFloat(applicationContext,"userLastLat" ) != 0f
+                                && SharedPreferencesManager.getFloat(applicationContext,"userLastLng") != 0f) {
+                            val tempLat = SharedPreferencesManager.getFloat(applicationContext,"userLastLat" )
+                            val tempLng =  SharedPreferencesManager.getFloat(applicationContext,"userLastLng")
+                            val dist = getDistance( LatLng(tempLat.toDouble(), tempLng.toDouble() ) , LatLng(it.latitude, it.longitude))
+                            Toast.makeText(applicationContext,  dist + " meter" , Toast.LENGTH_LONG).show()
+                            if (dist.toFloat() > 2f)
+                                showOrAnimateMarker(it)
+
+                        } else {
+                            SharedPreferencesManager.putFloat(applicationContext,"userLastLat",it.latitude.toFloat())
+                            SharedPreferencesManager.putFloat(applicationContext,"userLastLng",it.longitude.toFloat())
+                        }
+                    }
         }
     }
 
+    private fun  getDistance(latlngA :LatLng , latlngB : LatLng ) : String {
+        val locationA : Location  = Location("point A")
 
+        locationA.setLatitude(latlngA.latitude)
+        locationA.setLongitude(latlngA.longitude)
+
+        val locationB : Location = Location("point B")
+
+        locationB.setLatitude(latlngB.latitude)
+        locationB.setLongitude(latlngB.longitude)
+
+        val distance = locationA.distanceTo(locationB)
+        return String.format("%.2f", distance)
+        // returns meter
+    }
+
+    /*private fun getDirectionsDetails(origin: String, destination: String, mode: TravelMode): DirectionsResult? {
+        val now = DateTime()
+        try {
+            return DirectionsApi.newRequest(getGeoContext())
+                    .mode(mode)
+                    .origin(origin)
+                    .destination(destination)
+                    .departureTime(now)
+                    .await()
+        } catch (e: ApiException) {
+            e.printStackTrace()
+            return null
+        } catch (e: InterruptedException) {
+            e.printStackTrace()
+            return null
+        } catch (e: IOException) {
+            e.printStackTrace()
+            return null
+        }
+
+    }*/
+   /* private fun getGeoContext() : GeoApiContext  {
+        val geoApiContext : GeoApiContext = GeoApiContext(requestHandler Request)
+        return geoApiContext.setQueryRateLimit(3)
+                .setApiKey(getString(R.string.google_distance_api))
+                .setConnectTimeout(1, TimeUnit.SECONDS)
+                .setReadTimeout(1, TimeUnit.SECONDS)
+                .setWriteTimeout(1, TimeUnit.SECONDS);
+    }
+*/
     private fun startListenNewLocation() {
 
         viewModel.currentLocation()
@@ -78,13 +158,9 @@ class MainActivity : AppCompatActivity() {
                         firstTimeFlag = false
                         googleMapHelper.animateCamera(LatLng(it.latitude, it.longitude), googleMap)
                         startDistanceTracking()
-
                     }
-
                     showOrAnimateMarker(it)
                 }
-
-
     }
 
     private fun startDistanceTracking() {
@@ -96,9 +172,6 @@ class MainActivity : AppCompatActivity() {
                     distanceCoveredTextView.text = it
                 }
     }
-
-
-
 
     private fun showOrAnimateMarker(location: Location) {
         val latLng = LatLng(location.latitude, location.longitude)

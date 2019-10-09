@@ -75,10 +75,18 @@ class MainActivityViewModel constructor(private val googleMapHelper: GoogleMapHe
 
     fun startLocationTracking() {
         locationTrackingCoordinates = currentLocation
-        compositeDisposable.add(Observable.interval(10, TimeUnit.SECONDS)
+        compositeDisposable.add(
+                Observable.interval(10, TimeUnit.SECONDS)
                 .subscribeOn(appRxScheduler.threadPoolSchedulers())
-                .subscribe({ _ -> makeDistanceCalculationCall() }
-                        , { _ -> startLocationTracking() }))
+                .subscribe(
+                        {
+                            makeDistanceCalculationCall()
+                        },
+                        {
+                            startLocationTracking()
+                        }
+                )
+        )
     }
 
     private fun makeDistanceCalculationCall() {
@@ -103,8 +111,10 @@ class MainActivityViewModel constructor(private val googleMapHelper: GoogleMapHe
                 })
     }
 
-      fun getDistance(): String {
+   fun getDistance(): String {
         Log.e(TAG, "Total Distance -> $totalDistance")
+
+
         return googleMapHelper.getDistanceInKm(totalDistance.toDouble())
     }
 
