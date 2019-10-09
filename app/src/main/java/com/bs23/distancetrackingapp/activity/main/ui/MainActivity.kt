@@ -83,11 +83,11 @@ class MainActivity : AppCompatActivity() {
 
                     showOrAnimateMarker(it)
                 }
-        viewModel.getDistance()
+       // viewModel.getDistance()
 
-                .length
-                .coerceAtLeast(2)
-                startDistanceTracking()
+        //                .length
+         //       .coerceAtLeast(2)
+         //       startDistanceTracking()
 
     }
 
