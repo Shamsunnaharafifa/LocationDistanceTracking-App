@@ -25,7 +25,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\debug\kotlin;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\debug\java;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\release\kotlin;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\release\java;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\debugAndroidTest\kotlin;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\debugUnitTest\kotlin;D:\bsAllProject\LocationDistanceTrackingApp-master\app\src\releaseUnitTest\kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="D:\myAllProjects\LocationDistanceTracking-App\app\src\debug\kotlin;D:\myAllProjects\LocationDistanceTracking-App\app\src\debug\java;D:\myAllProjects\LocationDistanceTracking-App\app\src\release\kotlin;D:\myAllProjects\LocationDistanceTracking-App\app\src\release\java;D:\myAllProjects\LocationDistanceTracking-App\app\src\debugAndroidTest\kotlin;D:\myAllProjects\LocationDistanceTracking-App\app\src\debugUnitTest\kotlin;D:\myAllProjects\LocationDistanceTracking-App\app\src\releaseUnitTest\kotlin">
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
